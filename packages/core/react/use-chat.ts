@@ -133,7 +133,8 @@ export function useChat({
                   content
                 })),
             ...extraMetadataRef.current.body,
-            ...options?.body
+            ...options?.body,
+            chatId: chatId
           }),
           headers: {
             ...extraMetadataRef.current.headers,
